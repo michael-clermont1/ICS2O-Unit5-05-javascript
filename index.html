@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h4>Please input your day of the week and your age so that you can determine<br>if you can get a student discount or normal pricing to enter the museum.</h4>
+    <p>Please input the Day of the Week (Sunday - Saturday) and your age</p>
+    <form>
+      <label for="day">Enter the day of the week:</label>
+      <select id="day" onchange="weekdaydroplist()">
+        <option>Sunday</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+      </select>
+      <label for="age">Enter Your Age</label>
+      <input type="number" id="age" name="age" min="1" max="120" value="1">
+    </form>
+    <button type="button" onclick="myWeekday()">Submit</button>
+    <p id="demo"></p>
+  </body>
+</html>
